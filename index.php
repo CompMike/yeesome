@@ -4,10 +4,10 @@
     <title>Upload Image using form</title>
     <link href="style.css" rel="stylesheet">
     <script src=
-    "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-    </script>
-    <script src="script.js">
-    </script>
+    "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="interact.min.js"></script>    
+    <script src="draggable.js"></script>
 </head>
 <body>
     <div id="mainform">
@@ -34,11 +34,9 @@
             <div id="clear"></div>
             <div id="preview">
                 <img id="previewimg" src="">
-                <img src="yeeface.png" class="yeemage">
+                <img src="yeeface.png" class="yeemage draggable" id="yeemage" style="display:none;">
             </div>
-            <div id="message">
-                <?php include 'uploadphp.php';?>
-            </div>
+            
         </div>
     </div>
 </body>

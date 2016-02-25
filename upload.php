@@ -1,5 +1,7 @@
 <?php
-$target_dir = "uploads/";
+// fuck this file it doesn't actually do anything important at all
+// if you wanted to you could literally delete it
+// $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
