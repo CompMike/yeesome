@@ -5,9 +5,30 @@
     <link href="style.css" rel="stylesheet">
     <script src=
     "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="html2canvas.js"></script>
     <script src="interact.min.js"></script>    
     <script src="draggable.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+       $("#save").on("click", function(event) {
+            console.log('hi');
+          event.preventDefault();
+          html2canvas(document.getElementById("preview"), {
+            allowTaint: true,
+            taintTest: false,
+            onrendered: function(canvas) {
+              var img = canvas.toDataURL();
+              window.open(img);
+            },
+            width: 400,
+            height: 400
+          });
+        });
+    });
+
+    </script>
 </head>
 <body>
     <div id="mainform">
@@ -36,6 +57,7 @@
                 <img id="previewimg" src="">
                 <img src="yeeface.png" class="yeemage draggable" id="yeemage" style="display:none;">
             </div>
+            <button id="save">Save</button>
             
         </div>
     </div>
