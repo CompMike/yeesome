@@ -11,23 +11,21 @@
     <script src="interact.min.js"></script>    
     <script src="draggable.js"></script>
     <script type="text/javascript">
-    $( document ).ready(function() {
-       $("#save").on("click", function(event) {
-            console.log('hi');
-          event.preventDefault();
-          html2canvas(document.getElementById("preview"), {
-            allowTaint: true,
-            taintTest: false,
-            onrendered: function(canvas) {
-              var img = canvas.toDataURL();
-              window.open(img);
-            },
-            width: 400,
-            height: 400
-          });
+        $( document ).ready(function() {
+           $("#save").on("click", function(event) {
+              event.preventDefault();
+              html2canvas(document.getElementById("preview"), {
+                allowTaint: true,
+                taintTest: false,
+                onrendered: function(canvas) {
+                  var img = canvas.toDataURL();
+                  window.open(img);
+                },
+                width: 400,
+                height: 400
+              });
+            });
         });
-    });
-
     </script>
 </head>
 <body>
@@ -54,8 +52,8 @@
             </div>
             <div id="clear"></div>
             <div id="preview">
-                <img id="previewimg" src="">
-                <img src="yeeface.png" class="yeemage draggable" id="yeemage" style="display:none;">
+                <img id="previewimg" src="" />
+                <img src="yeeface.png" class="yeemage resize-image" id="yeemage" style="display:none;" />
             </div>
             <button id="save">Save</button>
             
