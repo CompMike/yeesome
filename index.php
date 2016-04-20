@@ -10,6 +10,8 @@
     <script src="html2canvas.js"></script>
     <script src="interact.min.js"></script>    
     <script src="draggable.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/component.js"></script>
     <script type="text/javascript">
         $( document ).ready(function() {
            $("#save").on("click", function(event) {
