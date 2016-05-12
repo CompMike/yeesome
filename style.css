@@ -1,55 +1,6 @@
 @import "http://fonts.googleapis.com/css?family=Droid+Sans";
 /* Above is to load Google Fonts in our page.*/
 
-#mainform {
-    width: 960px;
-    margin: 30px auto;
-    padding-top: 20px;
-    font-family: 'Droid Sans', sans-serif;
-}
-#mainform h2 {
-    margin-left: 95px;
-}
-#innerdiv {
-    float: left;
-    width: 60%;
-    height: 575px;
-    padding: 10px 30px 30px;
-}
-#formdiv {
-    background-color: #fff;
-    color: #123456;
-    box-shadow: 0 1px 1px 1px gray;
-    width: 480px;
-    margin: 50px 0 0;
-    height: 300px;
-}
-h3 {
-    margin-top: 0;
-    color: #fff;
-    background-color: #1CC32B;
-    text-align: center;
-    width: 100%;
-    height: 50px;
-    padding-top: 30px;
-}
-input[type=submit] {
-    background-color: #1CC32B;
-    border: 1px solid #fff;
-    font-weight: 700;
-    font-size: 18px;
-    color: #fff;
-    width: 150px;
-    height: 30px;
-    border-radius: 3px;
-    padding: 2px;
-    box-shadow: 0 1px 1px 0 #a9a9a9;
-    margin-left: 20px;
-}
-#form {
-    width: 43%;
-    float: left;
-}
 #preview {
     height: 400px;
     width: 400px;
@@ -59,9 +10,9 @@ input[type=submit] {
 /*    position: relative;*/
 }
 #yeemage {
-/*	position: absolute;*/
-	top: 30px;
-	left: 70px;
+/*  position: absolute;*/
+    top: 30px;
+    left: 70px;
 } 
 .pre {
     margin-right: 20px;
@@ -77,17 +28,22 @@ input[type=submit] {
 }
 #file {
     opacity: 0;
-    width: 115px;
-    height: 115px;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
 }
 #upload {
-    width: 115px;
-    height: 115px;
-    background-image: url(abc.png);
+    width: 100%; 
+    height: 400px;
+    max-width: 400px;
+    max-height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-image: url(bluearrow.png);
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    margin-left: 35px;
-    box-shadow: 0 0 10px grey;
-    background-position: 5px;
 }
 #message {
     width: 100%;
@@ -100,15 +56,6 @@ input[type=submit] {
 #message span {
     color: red;
     font-size: 15px;
-}
-#detail {
-    line-height: 20px;
-    float: left;
-    width: 270px;
-    font-size: 14px;
-}
-ul {
-    margin-left: -25px;
 }
 #textmessage {
     float: right;

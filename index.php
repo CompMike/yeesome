@@ -31,35 +31,17 @@
     </script>
 </head>
 <body>
-    <div id="mainform">
-        <div id="innerdiv">
-            <h2>Upload Image using form</h2>
-            <div id="formdiv">
-                <h3>Upload Form</h3>
                 <form action="" enctype="multipart/form-data" id="form" method=
                 "post" name="form">
                     <div id="upload">
                         <input id="file" name="file" type="file">
-                    </div><input id="submit" name="submit" type="submit" value=
-                    "Upload">
+                    </div>
                 </form>
-                <div id="detail">
-                    <b>Note:</b>
-                    <ul>
-                        <li>To Choose file Click on folder.</li>
-                        <li>You can upload- <b>images(jpeg,jpg,png).</b></li>
-                        <li>Image should be less than 100kb in size.</li>
-                    </ul>
-                </div>
-            </div>
             <div id="clear"></div>
             <div id="preview">
                 <img id="previewimg" src="" />
                 <img src="yeeface.png" class="yeemage resize-image" id="yeemage" style="display:none;" />
             </div>
             <button id="save">Save</button>
-            
-        </div>
-    </div>
 </body>
 </html>
