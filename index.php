@@ -31,13 +31,14 @@
     </script>
 </head>
 <body>
+
                 <form action="" enctype="multipart/form-data" id="form" method=
                 "post" name="form">
                     <div id="upload">
                         <input id="file" name="file" type="file">
                     </div>
                 </form>
-            <div id="clear"></div>
+<!--             <div id="clear"></div> -->
             <div id="preview">
                 <img id="previewimg" src="" />
                 <img src="yeeface.png" class="yeemage resize-image" id="yeemage" style="display:none;" />

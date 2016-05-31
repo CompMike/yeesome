@@ -14,6 +14,7 @@ $(function() {
         $('#yeemage').css("display", "block");
         // $('#preview').css("display", "block");
         $('#previewimg').attr('src', e.target.result);
+        $('#form').addClass('shrink');
     };
     // Function for Deleting Preview Image.
     $("#deleteimg").click(function() {
