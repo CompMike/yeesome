@@ -11,6 +11,7 @@ $(function() {
     });
 });
     function imageIsLoaded(e) {
+        $('#save').css("display", "block");
         $('#yeemage').css("display", "block");
         // $('#preview').css("display", "block");
         $('#previewimg').attr('src', e.target.result);

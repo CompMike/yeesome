@@ -43,6 +43,6 @@
                 <img id="previewimg" src="" />
                 <img src="yeeface.png" class="yeemage resize-image" id="yeemage" style="display:none;" />
             </div>
-            <button id="save">Save</button>
+            <img src="save.png" style="display:none;" id="save" />
 </body>
 </html>
