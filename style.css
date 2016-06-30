@@ -11,16 +11,17 @@
     height: auto;
 /*    height: 400px;
     width: 400px;*/
-    text-align: center;
+    // text-align: center;
 /*    margin: 20px;*/
 /*    display: block;*/
-/*    position: relative;*/
+    position: relative;
 }
-#yeemage {
-/*  position: absolute;*/
-    top: 30px;
-    left: 70px;
-} 
+
+.resize-container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .pre {
     margin-right: 20px;
     font-size: 13px
@@ -34,6 +35,7 @@
  /*   padding: 8px;
     border: 1px solid #e4d3c3;*/
     margin-bottom: 5px;
+    position: absolute;
 }
 #file {
     opacity: 0;
