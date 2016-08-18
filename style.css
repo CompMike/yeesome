@@ -1,19 +1,53 @@
 @import "http://fonts.googleapis.com/css?family=Droid+Sans";
 /* Above is to load Google Fonts in our page.*/
 .shrink{
-    width: 50%;
-    float: left;
+    width: 100%;
+    clear: both;
 }
+.save-upload{
+    margin: 100px auto 0 auto;
+    /*display: inline;*/
+}
+.outside {
+  overflow: auto;
+  margin: 0 auto;
+  width: 33%;
+}
+
+.upload {
+    height: 400px;
+    max-width: 400px;
+    max-height: auto;
+    margin: 0 auto;
+    background-image: url(bluearrow.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#save {
+/*    width: 100%;*/
+    height: 200px;
+    max-width: 200px;
+    max-height: auto;
+    border: none;
+    margin: 0 auto;
+/*    margin-top: 100px;
+    background-image: url(save.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;*/
+}
+
 #preview {
     margin-top: 100px;
-    float: left;
-    width: 50%;
+    width: 33%;
     height: auto;
+    margin: 0 auto;
 /*    height: 400px;
     width: 400px;*/
     // text-align: center;
 /*    margin: 20px;*/
-/*    display: block;*/
+    display: block;
     position: relative;
 }
 
@@ -44,30 +78,9 @@
     max-width: 400px;
     max-height: 400px;
 }
-#save {
-/*    width: 100%;*/ 
-    height: 200px;
-    max-width: 200px;
-    max-height: auto;
-    border: none;
-    margin: 0 auto;
-/*    margin-top: 100px;
-    background-image: url(save.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;*/
-}
+
 #upload {
-    width: 100%; 
-    height: 400px;
-    max-width: 400px;
-    max-height: auto;
-    margin: 0 auto;
-    margin-top: 100px;
-    background-image: url(bluearrow.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+
 }
 #message {
     width: 100%;

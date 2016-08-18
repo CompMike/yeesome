@@ -3,19 +3,25 @@ $(document).ready(function() {
 $(function() {
     $(":file").change(function() {
     if (this.files && this.files[0]) {
-    var reader = new FileReader();
-    reader.onload = imageIsLoaded;
-    resizeableImage($('.resize-image'));
-    reader.readAsDataURL(this.files[0]);
+      var reader = new FileReader();
+      reader.onload = imageIsLoaded;
+      resizeableImage($('.resize-image'));
+      reader.readAsDataURL(this.files[0]);
     }
     });
 });
     function imageIsLoaded(e) {
-        $('#save').css("display", "block");
+        $('#save').css("display", "inline");
+        $('.save-upload').css("float", "left");
+        $('.save-upload').css("margin-right", "10px");
+        $('#upload').css("display", "inline");
+        $('#upload').css("float", "left");
+        $('#upload').css("margin-right", "10px");
         $('#yeemage').css("display", "block");
         // $('#preview').css("display", "block");
         $('#previewimg').attr('src', e.target.result);
         $('#form').addClass('shrink');
+        $('.save').addClass('shrink');
     };
     // Function for Deleting Preview Image.
     $("#deleteimg").click(function() {
@@ -75,9 +81,9 @@ var resizeableImage = function(image_target) {
       // Save the initial event details and container state
       event_state.container_width = $container.width();
       event_state.container_height = $container.height();
-      event_state.container_left = $container.offset().left; 
+      event_state.container_left = $container.offset().left;
       event_state.container_top = $container.offset().top;
-      event_state.mouse_x = (e.clientX || e.pageX || e.originalEvent.touches[0].clientX) + $(window).scrollLeft(); 
+      event_state.mouse_x = (e.clientX || e.pageX || e.originalEvent.touches[0].clientX) + $(window).scrollLeft();
       event_state.mouse_y = (e.clientY || e.pageY || e.originalEvent.touches[0].clientY) + $(window).scrollTop();
 
       // This is a fix for mobile safari
@@ -93,9 +99,9 @@ var resizeableImage = function(image_target) {
       event_state.evnt = e;
     }
 
-    resizing = function(e){ 
+    resizing = function(e){
         var mouse={},width,height,left,top,offset=$container.offset();
-        mouse.x = (e.clientX || e.pageX || e.originalEvent.touches[0].clientX) + $(window).scrollLeft(); 
+        mouse.x = (e.clientX || e.pageX || e.originalEvent.touches[0].clientX) + $(window).scrollLeft();
         mouse.y = (e.clientY || e.pageY || e.originalEvent.touches[0].clientY) + $(window).scrollTop();
 
         width = mouse.x - event_state.container_left;
@@ -108,20 +114,19 @@ var resizeableImage = function(image_target) {
         }
 
         if(width > min_width && height > min_height && width < max_width && height < max_height){
-          resizeImage(width, height);  
+          resizeImage(width, height);
           // Without this Firefox will not re-calculate the the image dimensions until drag end
-          $container.offset({'left': left, 'top': top});        
+          $container.offset({'left': left, 'top': top});
         }
     }
 
     resizeImage = function(width, height){
         resize_canvas.width = width;
         resize_canvas.height = height;
-        resize_canvas.getContext('2d').drawImage(orig_src, 0, 0, width, height);   
-        $(image_target).attr('src', resize_canvas.toDataURL("image/png"));  
+        resize_canvas.getContext('2d').drawImage(orig_src, 0, 0, width, height);
+        $(image_target).attr('src', resize_canvas.toDataURL("image/png"));
     };
 
 
     init();
 };
-

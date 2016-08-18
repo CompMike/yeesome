@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="html2canvas.js"></script>
-    <script src="interact.min.js"></script>    
+    <script src="interact.min.js"></script>
     <script src="draggable.js"></script>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/component.js"></script>
@@ -31,18 +31,20 @@
     </script>
 </head>
 <body>
-
-                <form action="" enctype="multipart/form-data" id="form" method=
-                "post" name="form">
-                    <div id="upload">
-                        <input id="file" name="file" type="file">
-                    </div>
-                </form>
-<!--             <div id="clear"></div> -->
-            <div id="preview">
-                <img id="previewimg" src="" />
-                <img src="yeeface.png" class="yeemage resize-image" id="yeemage" style="display:none;" />
-            </div>
-            <img src="save.png" style="display:none;" id="save" />
+    <form action="" enctype="multipart/form-data" id="form" method="post" name="form">
+      <div class="outside">
+        <div id="upload" class="save-upload upload">
+            <input id="file" name="file" type="file">
+        </div>
+        <div class="save-upload">
+            <img src="save.png" style="display:none;" id="save" class="save" />
+        </div>
+      </div>
+    </form>
+            <div style="clear: both;"></div>
+    <div id="preview">
+        <img id="previewimg" src="" />
+        <img src="yeeface.png" class="yeemage resize-image" id="yeemage" style="display:none;" />
+    </div>
 </body>
 </html>
