@@ -19,7 +19,7 @@
     max-width: 400px;
     max-height: auto;
     margin: 0 auto;
-    background-image: url(bluearrow.png);
+    background-image: url('img/arrow_circle.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

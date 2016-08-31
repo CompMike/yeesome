@@ -37,7 +37,7 @@
             <input id="file" name="file" type="file">
         </div>
         <div class="save-upload">
-            <img src="save.png" style="display:none;" id="save" class="save" />
+            <img src="img/save_circle.png" style="display:none;" id="save" class="save" />
         </div>
       </div>
     </form>
