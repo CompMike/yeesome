@@ -11,8 +11,15 @@
 .outside {
   overflow: auto;
   margin: 0 auto;
-  width: 33%;
+  width: 50%;
+  display: inline-block;
+  justify-content: center;
 }
+main {
+  margin: 20px 0;
+  padding: 10px;
+}
+
 
 .upload {
     height: 400px;
