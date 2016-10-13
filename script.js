@@ -12,16 +12,20 @@ $(function() {
 });
     function imageIsLoaded(e) {
         $('#save').css("display", "inline");
-        $('.save-upload').css("float", "left");
+        // $('.save-upload').css("float", "left");
         $('.save-upload').css("margin-right", "10px");
-        $('#upload').css("display", "inline");
-        $('#upload').css("float", "left");
+        $('#upload').css("display", "block");
+        // $('#upload').css("float", "left");
         $('#upload').css("margin-right", "10px");
         $('#yeemage').css("display", "block");
-        // $('#preview').css("display", "block");
+        $('#preview').addClass("col-md-10");
+        $('#left').addClass("col-md-2");
         $('#previewimg').attr('src', e.target.result);
         $('#form').addClass('shrink');
         $('.save').addClass('shrink');
+
+        $('#upload-wrapper').removeClass("col-md-2 col-md-offset-5 col-sm-12");
+        $('#upload-wrapper').addClass("col-md-12 col-sm-6 col-xs-6");
     };
     // Function for Deleting Preview Image.
     $("#deleteimg").click(function() {

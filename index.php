@@ -37,27 +37,27 @@
     </script>
 </head>
 <body>
-    <form action="" enctype="multipart/form-data" id="form" method="post" name="form">
-      <div class="row center-block">
-          <div class="col-md-2">
-            <div id="upload" class="save-upload upload">
-                <input id="file" name="file" type="file">
+  <div class="row">
+    <div id="left">
+      <form action="" enctype="multipart/form-data" id="form" method="post" name="form">
+        <div class="row">
+            <div id="upload-wrapper" class="col-md-2 col-md-offset-5 col-sm-12">
+              <div id="upload" class="save-upload upload">
+                  <input id="file" name="file" type="file" class="center-block">
+              </div>
             </div>
-          </div>
-          <div class="col-md-2">
-            <div class="save-upload">
-                <img src="img/save_circle.png" style="display:none;" id="save" class="save" />
+            <div class="col-md-12 col-sm-6 col-xs-6">
+              <div class="save-upload">
+                  <img src="img/save_circle.png" style="display:none;" id="save" class="save center-block" />
+              </div>
             </div>
-          </div>
-      </div>
-      <main class="outside">
-
-      </main>
-    </form>
-            <div style="clear: both;"></div>
-    <div id="preview">
-        <img id="previewimg" src="" />
-        <img src="yeeface.png" class="yeemage resize-image" id="yeemage" style="display:none;" />
+        </div>
+      </form>
     </div>
+    <div class="preview center-block col-sm-12 col-xs-12" id="preview">
+        <img id="previewimg" class="col-xs-12 col-sm-12 center-block" src="" />
+        <img src="yeeface.png" class="yeemage resize-image col-sm-12 col-xs-12" id="yeemage" style="display:none;" />
+    </div>
+  </div>
 </body>
 </html>

@@ -5,8 +5,11 @@
     clear: both;
 }
 .save-upload{
-    margin: 100px auto 0 auto;
+/*    margin: 100px auto 0 auto;*/
     /*display: inline;*/
+}
+.preview {
+    padding-top: 17px;
 }
 .outside {
   overflow: auto;
@@ -22,8 +25,8 @@ main {
 
 
 .upload {
-    height: 400px;
-    max-width: 400px;
+    height: 200px;
+    max-width: 200px;
     max-height: auto;
     margin: 0 auto;
     background-image: url('img/arrow_circle.png');
@@ -32,8 +35,8 @@ main {
     background-repeat: no-repeat;
 }
 #save {
-/*    width: 100%;*/
-    height: 200px;
+    width: 100%;
+    height: auto;
     max-width: 200px;
     max-height: auto;
     border: none;
@@ -47,7 +50,7 @@ main {
 
 #preview {
     margin-top: 100px;
-    width: 33%;
+/*    width: 33%;*/
     height: auto;
     margin: 0 auto;
 /*    height: 400px;
@@ -72,7 +75,7 @@ main {
     width: 400px;*/
     max-width: 500px;
     max-height: auto;
-    float: left;
+/*    float: left;*/
  /*   padding: 8px;
     border: 1px solid #e4d3c3;*/
     margin-bottom: 5px;
